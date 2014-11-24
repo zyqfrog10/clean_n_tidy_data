@@ -96,6 +96,6 @@ num = n[2,] - 2
 ## calculate the mean values for each activity and each subject
 tidyDS <- aggregate(subset[,1:num], by=list(subset=subset$subject,activity=subset$activity_labels), mean)
 # write the tidy dataset to .txt
-write.table(tidyDS,"~/Desktop/data/tidyDS.txt",sep = " ",row.names = FALSE)
+write.table(tidyDS,"~/Desktop/tidyDS.txt",sep = " ",row.names = FALSE)
 
 #===The end===
